@@ -1,0 +1,11 @@
+name: virtual-resume
+description: My resume so I can get a job
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: static-website-azure-python

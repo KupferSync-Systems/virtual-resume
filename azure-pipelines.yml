@@ -1,0 +1,6 @@
+  - task: Pulumi@1
+    condition: or(eq(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.Reason'], 'Manual'))
+    inputs:
+      azureSubscription: "kupfersync.systems"
+      command: "preview"
+      stack: "dm_kupfersync_systems/virtual-resume/dev"

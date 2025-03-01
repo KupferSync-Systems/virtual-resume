@@ -1,0 +1,8 @@
+config:
+  azure-native:location: WestEurope
+  pulumi:template: static-website-azure-python
+  virtual-resume:errorDocument: error.html
+  virtual-resume:indexDocument: index.html
+  virtual-resume:path: ./www
+environment:
+  - virtual-resume/virtual-resume
