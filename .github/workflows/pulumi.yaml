@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main
+permissions:
+  id-token: write
+  contents: read
 jobs:
-
   up:
     name: Preview
     runs-on: ubuntu-latest
